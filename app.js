@@ -188,7 +188,7 @@ function drawCanvas() {
 	  for(var i = globalShotInterval; i < 30; i++) {
 		ctx.fillStyle = "#3366ff";
 		ctx.beginPath();
-		futureX += sprayPattern[i].x;
+		futureX -= sprayPattern[i].x;
 		futureY += sprayPattern[i].y;
 		ctx.fillRect(futureX,futureY,hitRadius,hitRadius);
 		ctx.stroke();
