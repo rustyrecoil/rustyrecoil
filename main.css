@@ -1,0 +1,26 @@
+body {
+
+}
+
+div#mainDiv {
+
+}
+
+td, th {
+	width: 100px !important;
+}
+
+col {
+}
+
+.bg-rust {
+	background-color: #1E201E !important;
+}
+
+.navbar-rust .nav-link {
+	color: #f6e9dc !important;
+}
+
+.navbar-rust .nav-link:hover{
+	color: #fff !important;
+}
