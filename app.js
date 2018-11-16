@@ -9,9 +9,9 @@ for(var i in sprayPattern) {
 	var shot = sprayPattern[i];
 }
 
-const closeRangeHitbox = {body: {topX: 581, topY: 363, bottomX: 622, bottomY: 416}, head: {topX: 585, topY: 344, bottomX: 606, bottomY: 366}};
-const mediumRangeHitbox = {body: {topX: 609, topY: 385, bottomX: 620, bottomY: 401}, head: {topX: 612, topY: 379, bottomX: 618, bottomY: 386}};
-const longRangeHitbox = {body: {topX: 589, topY: 430, bottomX: 593, bottomY: 438}, head: {topX: 589, topY: 427, bottomX: 591, bottomY: 430}};
+const closeRangeHitbox = {body: {topX: 581, topY: 363, bottomX: 618, bottomY: 489}, head: {topX: 585, topY: 344, bottomX: 606, bottomY: 366}};
+const mediumRangeHitbox = {body: {topX: 609, topY: 385, bottomX: 622, bottomY: 412}, head: {topX: 612, topY: 379, bottomX: 618, bottomY: 386}};
+const longRangeHitbox = {body: {topX: 588, topY: 429, bottomX: 592, bottomY: 443}, head: {topX: 589, topY: 427, bottomX: 591, bottomY: 430}};
 
 var hitbox = closeRangeHitbox;
 
@@ -90,6 +90,7 @@ var startShooting = function() {
 	hitmarkers = [];
 	headshots = 0;
 	bodyshots = 0;
+	shoot();
 	shotInterval = setInterval(function(){
 		shoot();
 	}, 130 * speedMultiplier);
