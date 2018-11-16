@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Rusty Recoil - Rust Aim Trainer</title>
+    <meta name="description" content='Rusty Recoil is the only Rust aim trainer for browser. Train your AK spray from anywhere!'>
+    <meta charset="UTF-8">
+    <meta property="og:url" content="http://rustyrecoil.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rusty Recoil - Rust Aim Trainer" />
+    <meta property="og:description" content='Rusty Recoil is the only Rust aim trainer for browser. Train your AK spray from anywhere!' />
+    <meta property="og:image" content="./LOGO.png" />
+    <link rel="stylesheet" href="./main.css"/>
+    <link rel="icon" href="./ICON.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129216945-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-129216945-1');
+	</script>
+	<nav class="navbar navbar-expand-lg navbar-rust bg-rust">
+		<div class="d-flex flex-grow-1">
+			<span class="w-100 d-lg-none d-block"></span>
+			<a class="navbar-brand d-none d-lg-inline-block" href="/">
+				<img src="./LOGO.png" width="223" height="30"  alt="LOGO">
+			</a>
+			<a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="/">
+				<img src="./ICON.png" width="30" height="30"  alt="icon">
+			</a>
+			<div class="w-100 text-right">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+		<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+			<ul class="navbar-nav ml-auto flex-nowrap">
+				<li class="nav-item">
+					<a href="/legal" class="nav-link m-2 menu-item nav-active">Legal</a>
+				</li>
+				<li class="nav-item">
+					<a href="/contact" class="nav-link m-2 menu-item">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-xs">
+			
+		</div>
+		<div id = "mainDiv" class="col-md-auto">
+		  <canvas id="ctx" width="1200" height="800"></canvas>
+		</div>
+		<div class="col">
+			<h4 class="mb-1">Sponsors</h5>
+			<div class="list-group">
+			  <a href="https://discord.gg/e3BH6Y4" class="list-group-item list-group-item-danger flex-column align-items-start">
+				<div class="d-flex w-100 justify-content-between">
+				  <h5 class="mb-1">Rusty Goose</h5>
+				  <small>20x</small>
+				</div>
+				<p class="mb-1">Rusty Goose is a 20x server with a community focus. Mods include: TP, basic kits, homes, better loot, no BPs, no WB, and several other quality of life improvements.</p>
+				<small>Sponsor</small>
+			  </a>
+			  <a href="/contact" class="list-group-item list-group-item flex-column align-items-start">
+				<div class="d-flex w-100 justify-content-between">
+				  <h5 class="mb-1">YOUR SERVER</h5>
+				  <small>Vanilla</small>
+				</div>
+				<p class="mb-1">Post your server here! Click here to contact us.</p>
+				<small>Sponsor</small>
+			  </a>
+			  <a href="/contact" class="list-group-item list-group-item flex-column align-items-start">
+				<div class="d-flex w-100 justify-content-between">
+				  <h5 class="mb-1">YOUR CHANNEL</h5>
+				  <small>YouTube</small>
+				</div>
+				<p class="mb-1">Post your channel here! Click here to contact us.</p>
+				<small>Sponsor</small>
+			  </a>
+			  <a href="/contact" class="list-group-item list-group-item flex-column align-items-start">
+				<div class="d-flex w-100 justify-content-between">
+				  <h5 class="mb-1">YOUR WEBSITE</h5>
+				  <small>Website</small>
+				</div>
+				<p class="mb-1">Post your website here! Click here to contact us.</p>
+				<small>Sponsor</small>
+			  </a>
+			</div>
+		</div>
+	</div>
+  </body>
+<script src="./snake.js"></script>
+</html>

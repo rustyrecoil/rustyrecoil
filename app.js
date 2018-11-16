@@ -5,7 +5,7 @@ const sprayPattern = [{x: 0, y: 0}, {x: -14, y: -25}, {x: -4, y: -24}, {x: -29, 
 		{x: -23, y: -12}, {x: -20, y: -6}, {x: -17, y: -2}, {x: -12, y: -10}, {x: -10, y: -10},
 		{x: 5, y: -23}, {x: 22, y: 3}, {x: 17, y: -29}, {x: 40, y: -16}, {x: 20, y: -17}];
 	
-for(var i in sprayPattern) {
+for(var i in sprayPattern) {//remove?
 	var shot = sprayPattern[i];
 }
 
