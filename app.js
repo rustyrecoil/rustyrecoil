@@ -210,7 +210,6 @@ canvas.onclick = function() {
 
 canvas.onmousedown = function() {
 	if(!isShooting) {
-		console.log("start shooting");
 		startShooting();
 	}
 }
@@ -226,10 +225,8 @@ document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
 
 function lockChangeAlert() {
   if (isLocked()) {
-    console.log('The pointer lock status is now locked');
     document.addEventListener("mousemove", updatePosition, false);
   } else {
-    console.log('The pointer lock status is now unlocked');  
     document.removeEventListener("mousemove", updatePosition, false);
   }
 }
