@@ -24,7 +24,7 @@ var speedMultiplier = 1;
 var globalTickInterval = 0;
 var globalShotCount = 0;
 
-var puck = {x: startingX, y: startingY, radius:8};
+var puck = {x: startingX, y: startingY, radius:25};
 
 function startPlaying() {
 	isPlaying = true;
@@ -50,7 +50,7 @@ function stopPlaying() {
 }
 
 function isInsidePuck() {//change to distance from puck
-	if(mouseX >= puck.x && mouseX <= puck.x + puck.radius && mouseY >= puck.y && mouseY <= puck.y + puck.radius) {
+	if(mouseX >= puck.x-puck.radius/2 && mouseX <= puck.x + puck.radius/2 && mouseY >= puck.y-puck.radius/2 && mouseY <= puck.y + puck.radius/2) {
 		return true;
 	}
 	return false;
@@ -123,7 +123,7 @@ function drawCanvas() {
 
   ctx.fillStyle = "#3366ff";
   ctx.beginPath();
-  ctx.fillRect(puck.x,puck.y,puck.radius,puck.radius);//change to circle
+  ctx.fillRect(puck.x-puck.radius/2,puck.y-puck.radius/2,puck.radius,puck.radius);//change to circle
   ctx.stroke();
 }
 
