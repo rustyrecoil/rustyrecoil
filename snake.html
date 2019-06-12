@@ -56,8 +56,39 @@
 	</nav>
 	<div class="container-fluid">
 	  <div class="row">
+
 		<div class="col-xs">
-			
+			<div class="text-center">
+				<a href="https://rust.facepunch.com/blog/community-update-208/#Rusty_Recoil">
+					<img src="quote.png" alt="Facepunch Community Update">
+				</a>
+			</div>
+			<div class="text-center">
+				<a href="https://discord.gg/JnTemvD">
+					<img src="discord.png" alt="Discord Link">
+				</a>
+			</div>
+			<div class="list-group">
+			  <div class="list-group-item flex-column align-items-start">
+				<h5 class="mb-1">Size:</h5>
+				<div class="custom-control custom-radio">
+				  <input type="radio" class="custom-control-input" id="easySize" name="sizeRadios">
+				  <label class="custom-control-label" for="easySize">25px</label>
+				</div>
+				<div class="custom-control custom-radio">
+				  <input type="radio" class="custom-control-input" id="defaultSize" name="sizeRadios" checked>
+				  <label class="custom-control-label" for="defaultSize">15px</label>
+				</div>
+				<div class="custom-control custom-radio">
+				  <input type="radio" class="custom-control-input" id="hardSize" name="sizeRadios">
+				  <label class="custom-control-label" for="hardSize">10px</label>
+				</div>
+				<div class="custom-control custom-radio">
+				  <input type="radio" class="custom-control-input" id="crazySize" name="sizeRadios">
+				  <label class="custom-control-label" for="crazySize">5px</label>
+				</div>
+			  </div>
+			</div>
 		</div>
 		<div id = "mainDiv" class="col-md-auto">
 		  <canvas id="ctx" width="1200" height="800"></canvas>
