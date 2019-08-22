@@ -185,7 +185,7 @@ function drawCanvas() {
   if(futureSpray.checked) {
 	  var futureX = mouseX;
 	  var futureY = mouseY;
-	  for(var i = globalShotInterval; i < 30; i++) {
+	  for(var i = globalShotInterval+1; i < 30; i++) {
 		ctx.fillStyle = "#3366ff";
 		ctx.beginPath();
 		futureX -= sprayPattern[i].x;
