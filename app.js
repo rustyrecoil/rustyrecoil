@@ -4,10 +4,6 @@ const sprayPattern = [{x: 0, y: 0}, {x: -14, y: -25}, {x: -4, y: -24}, {x: -29, 
 		{x: -2, y: -25}, {x: -28, y: -16}, {x: -11, y: -12}, {x: -20, y: -28}, {x: -26, y: -2},
 		{x: -23, y: -12}, {x: -20, y: -6}, {x: -17, y: -2}, {x: -12, y: -10}, {x: -10, y: -10},
 		{x: 5, y: -23}, {x: 22, y: 3}, {x: 17, y: -29}, {x: 40, y: -16}, {x: 20, y: -17}];
-	
-for(var i in sprayPattern) {//remove?
-	var shot = sprayPattern[i];
-}
 
 const closeRangeHitbox = {body: {topX: 581, topY: 363, bottomX: 618, bottomY: 489}, head: {topX: 585, topY: 344, bottomX: 606, bottomY: 366}};
 const mediumRangeHitbox = {body: {topX: 609, topY: 385, bottomX: 622, bottomY: 412}, head: {topX: 612, topY: 379, bottomX: 618, bottomY: 386}};
@@ -70,13 +66,16 @@ function getHitType(x, y) {
 }
 
 function shoot() {
-	var nextBullet = sprayPattern[globalShotInterval];
 	hitmarkers[globalShotInterval] = {x: mouseX, y: mouseY, type: getHitType(mouseX, mouseY)};
-	mouseX -= nextBullet.x;
-	mouseY += nextBullet.y;
-	
+
+	var nextBullet = sprayPattern[globalShotInterval + 1];
+	if(nextBullet != null) {
+		mouseX -= nextBullet.x;
+		mouseY += nextBullet.y;
+	}
 	globalShotInterval++;
 	sessionshots++;
+	
 	drawCanvas();
 	if(globalShotInterval == 30) {
 		stopShooting();
