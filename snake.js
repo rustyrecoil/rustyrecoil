@@ -24,7 +24,31 @@ var speedMultiplier = 1;
 var globalTickInterval = 0;
 var globalShotCount = 0;
 
-var puck = {x: startingX, y: startingY, radius:25};
+var easySize = document.getElementById("easySize");
+var defaultSize = document.getElementById("defaultSize");
+var hardSize = document.getElementById("hardSize");
+var crazySize = document.getElementById("crazySize");
+
+var puck = {x: startingX, y: startingY, radius:15};
+
+function updateSize() {
+	if(easySize.checked) {
+		puck.radius = 25;
+	} else if(hardSize.checked) {
+		puck.radius = 10;
+	} else if(crazySize.checked) {
+		puck.radius = 5;
+	} else {
+		puck.radius = 15;
+	}
+	drawCanvas();
+}
+
+var sizeButtons = document.getElementsByName("sizeRadios");
+
+for(var i = 0; sizeButtons[i]; i++) {
+	sizeButtons[i].onclick = updateSize;
+}
 
 function startPlaying() {
 	isPlaying = true;

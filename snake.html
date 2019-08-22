@@ -43,7 +43,10 @@
 		<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
 			<ul class="navbar-nav ml-auto flex-nowrap">
 				<li class="nav-item">
-					<a href="/legal" class="nav-link m-2 menu-item nav-active">Legal</a>
+					<a href="/snake" class="nav-link m-2 menu-item nav-active">Snake</a>
+				</li>
+				<li class="nav-item">
+					<a href="/legal" class="nav-link m-2 menu-item">Legal</a>
 				</li>
 				<li class="nav-item">
 					<a href="/contact" class="nav-link m-2 menu-item">Contact</a>
@@ -53,49 +56,62 @@
 	</nav>
 	<div class="container-fluid">
 	  <div class="row">
+
 		<div class="col-xs">
-			
+			<div class="text-center">
+				<a href="https://rust.facepunch.com/blog/community-update-208/#Rusty_Recoil">
+					<img src="quote.png" alt="Facepunch Community Update">
+				</a>
+			</div>
+			<div class="text-center">
+				<a href="https://discord.gg/JnTemvD">
+					<img src="discord.png" alt="Discord Link">
+				</a>
+			</div>
+			<div class="list-group">
+			  <div class="list-group-item flex-column align-items-start">
+				<h5 class="mb-1">Size:</h5>
+				<div class="custom-control custom-radio">
+				  <input type="radio" class="custom-control-input" id="easySize" name="sizeRadios">
+				  <label class="custom-control-label" for="easySize">25px</label>
+				</div>
+				<div class="custom-control custom-radio">
+				  <input type="radio" class="custom-control-input" id="defaultSize" name="sizeRadios" checked>
+				  <label class="custom-control-label" for="defaultSize">15px</label>
+				</div>
+				<div class="custom-control custom-radio">
+				  <input type="radio" class="custom-control-input" id="hardSize" name="sizeRadios">
+				  <label class="custom-control-label" for="hardSize">10px</label>
+				</div>
+				<div class="custom-control custom-radio">
+				  <input type="radio" class="custom-control-input" id="crazySize" name="sizeRadios">
+				  <label class="custom-control-label" for="crazySize">5px</label>
+				</div>
+			  </div>
+			</div>
 		</div>
 		<div id = "mainDiv" class="col-md-auto">
 		  <canvas id="ctx" width="1200" height="800"></canvas>
 		</div>
 		<div class="col">
 			<div class="list-group">
-			  <a href="https://discord.gg/e3BH6Y4" class="list-group-item list-group-item-danger flex-column align-items-start">
+			  <a href="http://morterra.com" class="list-group-item list-group-item-danger flex-column align-items-start">
 				<div class="d-flex w-100 justify-content-between">
-				  <h5 class="mb-1">Rusty Goose</h5>
-				  <small>20x</small>
+				  <h5 class="mb-1">Morterra.io</h5>
+				  <small>Browser</small>
 				</div>
-				<p class="mb-1">Rusty Goose is a 20x server with a community focus. Mods include: TP, basic kits, homes, better loot, no BPs, no WB, and several other quality of life improvements.</p>
-				<small>Sponsor</small>
-			  </a>
-			  <a href="https://www.battlemetrics.com/servers/rust/2575930" class="list-group-item list-group-item-danger flex-column align-items-start">
-				<div class="d-flex w-100 justify-content-between">
-				  <h5 class="mb-1">Kaisworld EU</h5>
-				  <small>1.5x</small>
-				</div>
-				<p class="mb-1">Heavily modded to re-design the fundamentals of Rust, Kaisworld offers a finely tuned experience, for players who want a more complete Rust.</p>
-				<small>Sponsor</small>
-			  </a>
-			  <a href="/contact" class="list-group-item list-group-item flex-column align-items-start">
-				<div class="d-flex w-100 justify-content-between">
-				  <h5 class="mb-1">YOUR CHANNEL</h5>
-				  <small>YouTube</small>
-				</div>
-				<p class="mb-1">Click here to sponsor us!</p>
-				<small>Sponsor</small>
-			  </a>
-			  <a href="/contact" class="list-group-item list-group-item flex-column align-items-start">
-				<div class="d-flex w-100 justify-content-between">
-				  <h5 class="mb-1">YOUR WEBSITE</h5>
-				  <small>Website</small>
-				</div>
-				<p class="mb-1">Click here to sponsor us!</p>
+				<img src="morterra.png" alt="Morterra - Browser Survival">
+				<p class="mb-1">Morterra is a 3D browser survival game. Similar to Rust, but weapons are primitive and you can play from the browser!</p>
 				<small>Sponsor</small>
 			  </a>
 			</div>
 		</div>
 	</div>
   </body>
+<footer class="page-footer font-small blue">
+  <div class="footer-copyright text-center py-3">Website by:
+	<a href="https://redarrowmarketing.com">Red Arrow Marketing - Web Design & Digital Marketing Agency</a>
+  </div>
+</footer>
 <script src="./snake.js"></script>
 </html>
